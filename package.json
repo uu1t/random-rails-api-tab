@@ -1,0 +1,31 @@
+{
+  "name": "random-ror-api-tab",
+  "description": "Chrome extension to open random Ruby on Rails API page on new tab",
+  "version": "0.1.0",
+  "author": "Yuichi Tanikawa <u1.tanikawa@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/uu1t/random-ror-api-tab/issues"
+  },
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  },
+  "homepage": "https://github.com/uu1t/random-ror-api-tab",
+  "keywords": [],
+  "license": "MIT",
+  "main": "",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uu1t/random-ror-api-tab.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "crawler:clean": "rm -f ./data/default.jsonl",
+    "crawler:crawl": "scrapy crawl methods -o ./data/default.jsonl -t jsonlines",
+    "crawler:start": "npm run crawler:clean && npm run crawler:crawl && npm run crawler:tojson",
+    "crawler:tojson": "sort ./data/default.jsonl | sed -e '1i\\[' -e '$!s/$/,/' -e '$a\\]' > ./data/default.json",
+    "test": "exit 1",
+    "zip": "./scripts/zip.sh"
+  }
+}

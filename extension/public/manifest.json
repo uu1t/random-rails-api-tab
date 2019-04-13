@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Random Ruby on Rails API tab",
+  "version": "0.1.0",
+  "description": "Open random Ruby on Rails API page on new tab",
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "minimum_chrome_version": "58",
+  "homepage_url": "http://github.com/uu1t/random-ror-api-tab"
+}
