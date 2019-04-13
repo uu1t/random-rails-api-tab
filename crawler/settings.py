@@ -1,4 +1,4 @@
-BOT_NAME = "random-ror-api-tab"
+BOT_NAME = "random-rails-api-tab"
 
 SPIDER_MODULES = ["crawler.spiders"]
 NEWSPIDER_MODULE = "crawler.spiders"

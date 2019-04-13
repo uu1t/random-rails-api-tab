@@ -1,4 +1,4 @@
-# Random Ruby on Rails API tab
+# Random Rails API tab
 
 > Chrome extension to open random Ruby on Rails API document on new tab
 

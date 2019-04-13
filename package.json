@@ -1,23 +1,23 @@
 {
-  "name": "random-ror-api-tab",
-  "description": "Chrome extension to open random Ruby on Rails API page on new tab",
+  "name": "random-rails-api-tab",
+  "description": "Chrome extension to open random Ruby on Rails API document on new tab",
   "version": "0.1.0",
   "author": "Yuichi Tanikawa <u1.tanikawa@gmail.com>",
   "bugs": {
-    "url": "https://github.com/uu1t/random-ror-api-tab/issues"
+    "url": "https://github.com/uu1t/random-rails-api-tab/issues"
   },
   "devDependencies": {
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0"
   },
-  "homepage": "https://github.com/uu1t/random-ror-api-tab",
+  "homepage": "https://github.com/uu1t/random-rails-api-tab",
   "keywords": [],
   "license": "MIT",
   "main": "",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uu1t/random-ror-api-tab.git"
+    "url": "git+https://github.com/uu1t/random-rails-api-tab.git"
   },
   "scripts": {
     "build": "webpack",
