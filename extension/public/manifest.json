@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Random Ruby on Rails API tab",
+  "name": "Random Rails API tab",
   "version": "0.1.0",
   "description": "Open random Ruby on Rails API document on new tab",
   "icons": {
