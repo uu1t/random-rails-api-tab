@@ -208,4 +208,5 @@ dmypy.json
 
 data/*.jsonl
 dist/*.zip
+extension/public/*-bundle.css
 extension/public/*-bundle.js

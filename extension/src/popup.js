@@ -1,5 +1,4 @@
 import { h, app } from 'hyperapp'
-import 'picnic/picnic.min.css'
 
 import { ORIGIN } from './lib/constants'
 import History from './lib/History'
