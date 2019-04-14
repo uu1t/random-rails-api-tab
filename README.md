@@ -4,6 +4,10 @@
 
 ![screenshot](./images/screenshot-caption.png)
 
+## Installation
+
+- **Chrome**: https://chrome.google.com/webstore/detail/random-rails-api-tab/ngbeahjnndjoedgapccnoennbmalppbk
+
 ## Features
 
 - Open random Ruby on Rails API document (https://api.rubyonrails.org/) on new tab
