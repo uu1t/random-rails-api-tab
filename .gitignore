@@ -204,7 +204,8 @@ dmypy.json
 
 ### Custom
 !dist/
+!lib/
 
 data/*.jsonl
 dist/*.zip
-extension/public/newtab-bundle.js
+extension/public/*-bundle.js

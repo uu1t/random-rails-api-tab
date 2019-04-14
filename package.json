@@ -7,6 +7,9 @@
     "url": "https://github.com/uu1t/random-rails-api-tab/issues"
   },
   "devDependencies": {
+    "@types/chrome": "0.0.82",
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0"
   },
@@ -28,5 +31,9 @@
     "test": "exit 1",
     "prezip": "npm run build -- -p",
     "zip": "./scripts/zip.sh"
+  },
+  "dependencies": {
+    "hyperapp": "^1.2.9",
+    "picnic": "^6.5.0"
   }
 }
