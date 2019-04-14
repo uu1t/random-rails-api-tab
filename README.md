@@ -45,7 +45,6 @@ The extension is bundled into `extension/public` directory. Load `extension/publ
 ### Build and zip for production
 
 ```
-$ npm run build -- -p
 $ npm run zip
 ```
 
