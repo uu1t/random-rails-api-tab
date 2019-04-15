@@ -1,4 +1,4 @@
-import { app, h } from 'hyperapp'
+import { app } from 'hyperapp'
 import { div, input, label } from '@hyperapp/html'
 
 import { DEFAULT_HISTORY_SIZE, MAX_HISTORY_SIZE, MIN_HISTORY_SIZE, HISTORY_SIZE } from './lib/constants'
