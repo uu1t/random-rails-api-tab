@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
   entry: {
     newtab: './extension/src/newtab.js',
+    options: './extension/src/options.js',
     popup: './extension/src/popup.js',
     vendor: './node_modules/picnic/picnic.min.css'
   },

@@ -1,4 +1,4 @@
-import { HISTORY_ENTRIES, HISTORY_SIZE } from './constants'
+import { DEFAULT_HISTORY_SIZE, HISTORY_ENTRIES, HISTORY_SIZE } from './constants'
 
 export default class History {
   /**
@@ -6,6 +6,23 @@ export default class History {
    */
   constructor(storage = chrome.storage.local) {
     this.storage = storage
+  }
+
+  getSize() {
+    return new Promise(resolve => {
+      this.storage.get(HISTORY_SIZE, result => {
+        resolve(result[HISTORY_SIZE])
+      })
+    })
+  }
+
+  /**
+   * @param {Number} value
+   */
+  setSize(value) {
+    return new Promise(resolve => {
+      this.storage.set({ [HISTORY_SIZE]: value }, resolve)
+    })
   }
 
   clear() {
@@ -30,8 +47,7 @@ export default class History {
       this.storage.get([HISTORY_ENTRIES, HISTORY_SIZE], resolve)
     })
 
-    // TODO: make size configurable
-    const size = result[HISTORY_SIZE] || 100
+    const size = result[HISTORY_SIZE] || DEFAULT_HISTORY_SIZE
 
     /** @type {Array} */
     let entries = result[HISTORY_ENTRIES] || []

@@ -33,6 +33,7 @@
     "zip": "rm -f ./extension/public/vendor-bundle.js && ./scripts/zip.sh"
   },
   "dependencies": {
+    "@hyperapp/html": "^1.1.1",
     "hyperapp": "^1.2.9",
     "picnic": "^6.5.0"
   }

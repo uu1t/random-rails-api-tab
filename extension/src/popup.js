@@ -1,4 +1,4 @@
-import { h, app } from 'hyperapp'
+import { app, h } from 'hyperapp'
 
 import { ORIGIN } from './lib/constants'
 import History from './lib/History'
