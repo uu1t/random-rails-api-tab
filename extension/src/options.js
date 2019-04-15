@@ -38,6 +38,6 @@ const view = ({ historySize }, { setHistorySize }) =>
   ])
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const historySize = (await history.getSize()) || DEFAULT_HISTORY_SIZE
+  const historySize = (await history.size()) || DEFAULT_HISTORY_SIZE
   app({ historySize }, actions, view, document.getElementById('app'))
 })

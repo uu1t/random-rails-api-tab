@@ -8,7 +8,7 @@ export default class History {
     this.storage = storage
   }
 
-  getSize() {
+  size() {
     return new Promise(resolve => {
       this.storage.get(HISTORY_SIZE, result => {
         resolve(result[HISTORY_SIZE])
