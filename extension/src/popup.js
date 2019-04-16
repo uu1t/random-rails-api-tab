@@ -24,12 +24,7 @@ const view = ({ entries }, { clear }) =>
           { style: 'font-size: 1rem;' },
           tbody(
             entries.map(entry =>
-              tr([
-                td(
-                  { style: 'padding-right: 0.6em;' },
-                  a({ href: ORIGIN + entry.path, target: '_blank' }, `${entry.method} - ${entry.namespace}`)
-                )
-              ])
+              tr([td({ style: 'padding-right: 0.6em;' }, a({ href: entry.url, target: '_blank' }, entry.title))])
             )
           )
         )
