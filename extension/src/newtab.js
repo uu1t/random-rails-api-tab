@@ -5,10 +5,13 @@ const methods = require('../../data/default.json')
 
 document.addEventListener('DOMContentLoaded', () => {
   const i = Math.floor(Math.random() * methods.length)
-  const { namespace, method, path } = methods[i]
-  const url = ORIGIN + path
+  const { c, m, h } = methods[i]
+
+  const url = `${ORIGIN}/classes/${c.split('::').join('/')}.html#${h}`
   document.getElementById('iframe').setAttribute('src', url)
-  const title = `${method} - ${namespace}`
+
+  const title = `${m} - ${c}`
   document.title = title
+
   new History().push({ title, url })
 })

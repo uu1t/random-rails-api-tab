@@ -1,5 +1,3 @@
-from urllib.parse import urlparse
-
 import scrapy
 
 
@@ -58,10 +56,11 @@ class MethodsSpider(scrapy.Spider):
 
     def parse(self, response):
         for el in response.css(".method-title"):
-            namespace = response.css("title::text").get()
-            method = el.css("b::text").get()
-            path = urlparse(response.url).path + "#" + el.attrib["id"]
-            yield {"namespace": namespace, "method": method, "path": path}
+            yield {
+                "c": response.css("title::text").get(),
+                "m": el.css("b::text").get(),
+                "h": el.attrib["id"],
+            }
 
         for el in response.xpath(
             "//div[@id='content']/div[contains(text(), 'Namespace')]/following-sibling::ul[1]//a"
