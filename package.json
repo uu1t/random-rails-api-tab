@@ -1,7 +1,7 @@
 {
   "name": "random-rails-api-tab",
   "description": "Chrome extension to open random Ruby on Rails API document on new tab",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Yuichi Tanikawa <u1.tanikawa@gmail.com>",
   "bugs": {
     "url": "https://github.com/uu1t/random-rails-api-tab/issues"
