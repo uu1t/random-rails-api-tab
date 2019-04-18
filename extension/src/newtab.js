@@ -32,5 +32,5 @@ const importMethods = version => {
   const title = `${m} - ${c}`
   document.title = title
 
-  new History().push({ title, url })
+  new History().push({ c, m, url })
 })()

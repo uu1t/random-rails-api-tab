@@ -29,9 +29,10 @@ class App extends Component {
             <tbody>
               {entries.map(entry => (
                 <tr>
+                  <td style={{ paddingRight: '0.6em' }}>{entry.c}</td>
                   <td style={{ paddingRight: '0.6em' }}>
                     <a href={entry.url} target="_blank">
-                      {entry.title}
+                      {entry.m}
                     </a>
                   </td>
                 </tr>
