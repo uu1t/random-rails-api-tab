@@ -1,7 +1,7 @@
 import { ORIGIN } from './lib/constants'
 import History from './lib/History'
 
-const methods = require('../../data/default.json')
+const methods = require('../../data/methods-v5.2.json')
 
 document.addEventListener('DOMContentLoaded', () => {
   const i = Math.floor(Math.random() * methods.length)

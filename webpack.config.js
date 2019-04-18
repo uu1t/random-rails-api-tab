@@ -13,6 +13,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.jsx?$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            plugins: ['@babel/plugin-proposal-class-properties', ['@babel/plugin-transform-react-jsx', { pragma: 'h' }]]
+          }
+        }
+      },
+      {
         test: /\.css$/,
         use: [{ loader: MiniCssExtractPlugin.loader }, { loader: 'css-loader' }]
       }
@@ -20,6 +29,7 @@ module.exports = {
   },
   output: {
     filename: '[name]-bundle.js',
+    chunkFilename: '[name]-bundle.js',
     path: path.resolve(__dirname, 'extension', 'public')
   },
   plugins: [
