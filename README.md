@@ -29,10 +29,10 @@ $ npm install
 ### Scrape
 
 ```
-$ npm run crawler:start
+$ ./scripts/crawl.sh
 ```
 
-Be careful that it may take minutes to complete.
+Be careful that it may take dozens of minutes to complete.
 
 ### Build
 
@@ -48,7 +48,7 @@ The extension is bundled into `extension/public` directory. Load `extension/publ
 $ npm run zip
 ```
 
-`chrome-${version}.zip` is created in `dist` directory.
+`chrome-${version}.zip` and `firefox-${version}.zip` are created in `dist` directory.
 
 ## Credits
 
