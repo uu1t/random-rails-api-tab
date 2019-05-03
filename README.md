@@ -1,5 +1,8 @@
 # Random Rails API tab
 
+![Chrome Web Store](https://img.shields.io/chrome-web-store/v/ngbeahjnndjoedgapccnoennbmalppbk.svg)
+![Mozilla Add-on](https://img.shields.io/amo/v/random-rails-api-tab.svg)
+
 > Chrome/Firefox extension to open random Ruby on Rails API document on new tab
 
 ![screenshot](./images/screenshot-caption.png)
@@ -17,36 +20,33 @@
 
 ### Requirements
 
+- Unix-like OS (macOS, Linux)
 - `python3`, `pipenv` for scraping data
 - `node`, `npm` for building extension
 
-### Setup
+### Scrape (not required to build extension)
 
 ```
-$ pipenv install
-$ npm install
-```
-
-### Scrape
-
-```
-$ ./scripts/crawl.sh
+pipenv install
+./scripts/crawl.sh
 ```
 
 Be careful that it may take dozens of minutes to complete.
 
-### Build
+### Build instructions for development
 
 ```
-$ npm run build
+npm install
+npm run build
 ```
 
 The extension is bundled into `extension/public` directory. Load `extension/public` directory to browser.
 
-### Build and zip for production
+### Build instructions for production
 
 ```
-$ npm run zip
+npm install
+npm run zip
 ```
 
 `chrome-${version}.zip` and `firefox-${version}.zip` are created in `dist` directory.
