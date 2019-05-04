@@ -15,6 +15,11 @@ const importMethods = version => {
 }
 
 ;(async () => {
+  // Do nothing when accessed by navigating back because iframe is loaded
+  if (window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
+    return
+  }
+
   const apiVersion = await new Promise(resolve => {
     chrome.storage.local.get(API_VERSION, result => {
       resolve(result[API_VERSION] || DEFAULT_API_VERSION)
